@@ -12,6 +12,7 @@ class Transfer
   end
 
   def valid?
+    binding.pry
     @sender.balance >= @amount && @sender.valid? && @receiver.valid?
   end
 
